@@ -2,9 +2,9 @@
 
 ## About the Project
 
-CAMEbruteforcer.py: will generate sub files which have all the possible keys combination for CAME gate (12bit code), the code will generate multiple files splitted by user choice( each 500 keys in a file, 1000 ....etc). 
+**CAMEbruteforcer.py**: will generate sub files which have all the possible keys combination for CAME gate (12bit code), the code will generate multiple files splitted by user choice( each 500 keys in a file, 1000 ....etc). 
 
-CAMEall.sub: This contains all possible keys (4096), it needs 16 minutes to run completely, using this file will open the gate eventually, if you feel the need to know the exact key or shorten this process check the instructions below. I also attached the whole set of files splitted according to the number of keys. 
+**CAMEall.sub**: This contains all possible keys (4096), it needs 16 minutes to run completely, using this file will open the gate eventually, if you feel the need to know the exact key or shorten this process check the instructions below. I also attached the whole set of files splitted according to the number of keys. 
 
 ## Installation
 
@@ -25,9 +25,9 @@ $ python CAMEbruteforcer.py
 ## Practical Guide for Brute-Force attack using sub files. 
 This process is the best I can get with the current flipper firmware. 
 
-1. Start with the 1000's key file, each file will take around 4 minutes each. (for example the gate opened on file "1000-1999.sub")
-2. Go to the next set of files with 500'keys files, you need to run two files now (in our example we need to run  "1000-1499.sub" and "1500-1999.sub"), lets assume    it opened with "1500-1999.sub" file. 
-3. Go to the next set of files with 100'keys files, you need to run five files now, each file will take 25 seconds to run. 
+1. Start with the 1000 keys file, each file will take around 4 minutes each. (for example the gate opened on file "1000-1999.sub")
+2. Go to the next set of files with 500 keys files, you need to run two files now (in our example we need to run  "1000-1499.sub" and "1500-1999.sub"), lets assume    it opened with "1500-1999.sub" file. 
+3. Go to the next set of files with 100 keys files, you need to run five files now, each file will take 25 seconds to run. 
 4. if you feel you really need to know the exact code, generate less files with the script (50, 10...) and continue the same process. 
 
 
