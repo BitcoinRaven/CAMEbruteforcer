@@ -36,11 +36,11 @@ CAMEall.sub: This contains all possible keys (4096), it needs 16 minutes to run 
 	9	    4000	4096	25 sec
     ---------------------------------
 
-# How to use CAMEbruteforcer.py
+# Generate sub files using CAMEbruteforcer.py
 1. Change "split = 1000" to whatever number of keys you wish to have in each file. 
 2. Run the script.
 
-# Practical Guide for Brute-Force attack. 
+# Practical Guide for Brute-Force attack using sub files. 
 This process is the best I can get with the current flipper firmware. 
 
 1. Start with the 1000's key file, each file will take around 4 minutes each. (for example the gate opened on file "1000-1999.sub")
