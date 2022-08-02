@@ -1,9 +1,35 @@
-# CAMEbruteforcer
-### Flipper Zero Sub Files To Brute-Force CAME 12bit Gate.
+# Flipper Zero Sub Files To Brute-Force CAME 12bit Gate.
+
+## About the Project
 
 CAMEbruteforcer.py: will generate sub files which have all the possible keys combination for CAME gate (12bit code), the code will generate multiple files splitted by user choice( each 500 keys in a file, 1000 ....etc). 
 
 CAMEall.sub: This contains all possible keys (4096), it needs 16 minutes to run completely, using this file will open the gate eventually, if you feel the need to know the exact key or shorten this process check the instructions below. I also attached the whole set of files splitted according to the number of keys. 
+
+## Installation
+
+Tested for **Python 3.10.0+**
+
+```bash
+$ git clone https://github.com/BitcoinRaven/CAMEbruteforcer.git
+$ cd CAMEbruteforcer
+```
+
+## Usage
+
+Change "split = 1000" to whatever number of keys you wish to have in each file. 
+```bash
+$ python CAMEbruteforcer.py
+```
+
+## Practical Guide for Brute-Force attack using sub files. 
+This process is the best I can get with the current flipper firmware. 
+
+1. Start with the 1000's key file, each file will take around 4 minutes each. (for example the gate opened on file "1000-1999.sub")
+2. Go to the next set of files with 500'keys files, you need to run two files now (in our example we need to run  "1000-1499.sub" and "1500-1999.sub"), lets assume    it opened with "1500-1999.sub" file. 
+3. Go to the next set of files with 100'keys files, you need to run five files now, each file will take 25 seconds to run. 
+4. if you feel you really need to know the exact code, generate less files with the script (50, 10...) and continue the same process. 
+
 
 # Folder system and Timing 
  
@@ -36,15 +62,4 @@ CAMEall.sub: This contains all possible keys (4096), it needs 16 minutes to run 
 	9	    4000	4096	25 sec
     ---------------------------------
 
-# Generate sub files using CAMEbruteforcer.py
-1. Change "split = 1000" to whatever number of keys you wish to have in each file. 
-2. Run the script.
-
-# Practical Guide for Brute-Force attack using sub files. 
-This process is the best I can get with the current flipper firmware. 
-
-1. Start with the 1000's key file, each file will take around 4 minutes each. (for example the gate opened on file "1000-1999.sub")
-2. Go to the next set of files with 500'keys files, you need to run two files now (in our example we need to run  "1000-1499.sub" and "1500-1999.sub"), lets assume    it opened with "1500-1999.sub" file. 
-3. Go to the next set of files with 100'keys files, you need to run five files now, each file will take 25 seconds to run. 
-4. if you feel you really need to know the exact code, generate less files with the script (50, 10...) and continue the same process. 
 
