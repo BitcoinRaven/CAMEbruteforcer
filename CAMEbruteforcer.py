@@ -1,5 +1,5 @@
 # Script settings:
-split = 1000  # number of keys per file
+split = 100  # number of keys per file
 file_header = """
 Filetype: Flipper SubGhz RAW File
 Version: 1
@@ -27,7 +27,7 @@ for key_dec in combos:
     key_str = key_str * repetition
 
     if (key_dec % split) == 0:
-        filename = f"CAME_bruteforce_{split}_{int(key_dec / split)}.sub"
+        filename = f"CAME_{split}_{int(key_dec / split)}.sub"
         with open(filename, "w") as f:
             f.write(file_header)
 
