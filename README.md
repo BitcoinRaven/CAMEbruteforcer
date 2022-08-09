@@ -61,3 +61,6 @@ This process is the best I can get with the current flipper firmware.
 | 6 | 3000 | 3499 | ~30 sec |
 | 7 | 3500 | 3999 | ~30 sec |
 | 8 | 4000 | 4096 | ~7 sec |
+
+# Thanks
+[@tobiabocchi](https://github.com/tobiabocchi) for the updated code!
