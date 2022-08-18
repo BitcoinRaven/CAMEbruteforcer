@@ -11,7 +11,10 @@
 ## Changelog 
 
 **12-Aug-2022** : -Time reduced! the whole script now complete in ~4 minutes.
-			-Folder created automatically
+			Folder created automatically
+			
+**17-Aug-2022** : -File names updated for better display on flipper.
+
 
 ## Installation
 
