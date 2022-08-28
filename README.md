@@ -6,8 +6,6 @@
 
 **868.35Mhz/CAMEbruteforcer868.py**: will generate sub files which have all the possible keys combination for CAME gate (12bit code/868.35 Mhz), the code will generate multiple files splitted by user choice (500 keys in a file, 1000... etc).
 
-**CAMEall.sub**: This contains all possible keys (4096), it needs less than 5 minutes to run completely (287 seconds), using this file will open the gate eventually, if you feel the need to know the exact key or shorten this process check the instructions below. I also attached the whole set of files splitted according to the number of keys.
-
 ## Changelog 
 
 **12-Aug-2022** : -Time reduced! the whole script now complete in ~4 minutes.
